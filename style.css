@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+/* Color Palette */
+:root {
+    --primary: #ff7e5f;
+    --primary-dark: #eb5e41;
+    --primary-light: #ffb199;
+    --secondary: #0ba360;
+    --text-dark: #333333;
+    --text-light: #f8f9fa;
+    --background: #ffffff;
+    --background-light: #f8f9fa;
+    --card-bg: #ffffff;
+    --border-radius: 8px;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+}
+
+.main_container {
+    background-color: var(--background-light);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--primary);
+}
+
+.title h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.title i {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.details p {
+    color: gray;
+}
+
+.mealdb {
+    font-weight: 500;
+}
+
+.mealdb a {
+    text-decoration: none;
+    color: var(--primary-light);
+
+}
+
+.search_inpt {
+    width: 100%;
+    padding: .4rem;
+    border: 1px solid gray;
+    max-width: 500px;
+    margin-right: 10px;
+}
+
+.search_inpt::placeholder {
+    font-size: 16px;
+}
+
+.search_inpt:focus {
+    border: 1px solid var(--primary-light);
+    outline: none;
+}
+
+.search_btn {
+    padding: .5rem;
+    color: var(--text-light);
+    font-weight: 900;
+    border: none;
+    background-color: var(--primary-light);
+    border-radius: var(--border-radius);
+    transition: all .2s ease;
+    width: 100%;
+}
+
+.search_btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.search_btn:active {
+    transform: scale(0.9);
+}
+
+/* Js */
+
+
+.error_sucess_div {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.errorOrSuccessDiv h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.meals_div {
+    background-color: white;
+    box-shadow: var(--shadow);
+    margin: 10px;
+    padding: 0;
+    border-radius: var(--border-radius);
+    width: 350px;
+}
+
+.meals_img {
+    width: 100%;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.meals_div h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.meal_btn {
+    background-color: var(--primary-light);
+    border: none;
+    margin: 10px;
+    padding: 5px 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.meal_btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.meal_btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.meal_btn:active {
+    transform: scale(0.9);
+}
+
+.instructions_div {
+    background-color: white;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.instrct_div {
+    width: 100%;
+}
+
+.img_info {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.back_btn {
+    margin: 10px;
+    background-color: var(--primary-light);
+    border: none;
+    padding: 5px 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.back_btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.back_btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.back_btn:active {
+    transform: scale(0.9);
+}
+
+.instrct_div h4 {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.instrct_div p {
+    text-align: justify;
+    margin: 10px;
+}
+
+.inner_ingredient {
+    width: 250px;
+    margin: 10px auto;
+    padding: 4px;
+}
+
+.how_to_cook h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.inner_ingredient i {
+    background-color: var(--secondary);
+    padding: 5px;
+    border-radius: 50px;
+    color: white;
+}
+
+.inner_ingredient p {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.youtube_div {
+    margin: 10px auto;
+    background-color: red;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border-radius: var(--border-radius);
+}
+
+.youtube_div a {
+    text-decoration: none;
+    color: white;
+}
+
+.error_box {
+    background: rgba(255, 0, 0, 0.15);
+    border: 1px solid red;
+    padding: 12px 18px;
+    color: red;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .form1 {
+        margin: 0 auto;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+    }
+
+    .search_inpt {
+        width: 100%;
+        padding: .4rem;
+        border: 1px solid gray;
+        max-width: 500px;
+        margin-right: 10px;
+    }
+
+    .search_btn {
+        padding: .5rem;
+        margin-bottom: 8px;
+        margin-left: 10px;
+    }
+}

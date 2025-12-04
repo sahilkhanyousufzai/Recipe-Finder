@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe-Finder</title>
+
+        <!-- Link of font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- Link of BootStrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+
+        <!-- Link of CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Main Container -->
+        <div class="container main_container">
+            <!-- div for the search and input -->
+            <div class="row justify-content-center">
+                <!-- div for the header -->
+                <div class="col-12 text-center title">
+                    <i class="fa-solid fa-utensils"></i>
+                    <h1>Recipe Finder</h1>
+                </div>
+                <!-- Details -->
+                <div class="col-12 text-center details">
+                    <p>Find delicious recipes from around the world</p>
+                    <p>Data from <span class="mealdb"><a
+                                href="https://www.themealdb.com/"
+                                target="_blank">TheMealDB</a></span> 🧑‍🍳</p>
+                </div>
+
+                <!-- inputs -->
+                <div class="col text-center">
+                    <form class="form1">
+                        <div class="col-12 col-md-8">
+                            <input type="text"
+                                placeholder="Search for meals or Keywords..."
+                                required
+                                class="search_inpt" id="search_inpt">
+                        </div>
+                        <div class="col-12 mt-2 col-md-2">
+                            <button class="search_btn">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- error or sucess message -->
+            <div class="col-12 error_sucess_div">
+
+            </div>
+            <!-- Meals Images -->
+            <div class="row justify-content-center main_row_div">
+                <!-- Js -->
+            </div>
+
+            <div class="col-12 col-md-9 instructions_div" id="infoMeal">
+                <!-- Meals Instructions -->
+
+            </div>
+        </div>
+        <!-- Script JS for BootStrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <!-- Script of JS -->
+        <script src="script.js"></script>
+    </body>
+</html>
